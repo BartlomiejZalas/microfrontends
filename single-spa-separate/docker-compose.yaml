@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+    angular:
+        image: 'sub-angular-app'
+        build: './sub-app-angular/'
+        ports:
+            - 3001:3001
+    react:
+        image: 'sub-react-app'
+        build: './sub-app-react16/'
+        ports:
+            - 3002:3002
+    main:
+        image: 'main-app'
+        build: './main-app/'
+        ports:
+            - 3000:3000

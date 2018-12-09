@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.addEventListener('load', function () {
+            document.querySelector('a').focus();
+            console.log('index.html');
+            
+        });
+         
+    </script>
+</head>
+
+<body>
+    <div>
+        <a href="page1.html" target="frame" tabindex="0">Page 1</a>
+        <a href="page2.html" target="frame" tabindex="0">Page 2</a>
+        <button onclick="console.log(window.alert); alert('I\'m the alert!')" >Show Alert!</button>
+    </div>
+    <iframe src="page1.html" name="frame"></iframe>
+</body>
+
+</html>

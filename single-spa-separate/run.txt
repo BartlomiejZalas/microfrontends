@@ -1,0 +1,8 @@
+cd sub-app-angular 
+npm install && npm run build && npm run serve
+
+cd sub-app-react16
+npm install && npm run build && npm run serve
+
+cd main-app
+npm install && npm run build && npm run serve
